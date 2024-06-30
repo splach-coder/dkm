@@ -50,10 +50,9 @@ function App() {
           },
         }
       );
-      console.log(response.data[0].data);
 
       setJsonData(JSON.parse(response.data[0].data));
-      
+
       const workbook = XLSX.utils.book_new();
       const worksheet = {};
 
