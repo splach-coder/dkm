@@ -60,28 +60,28 @@ function App() {
       const cellMapping = [
         { cell: "A1", value: "VAT" },
         { cell: "B1", value: jsonData.VAT },
-        { cell: "A2", value: "Inv date" },
-        { cell: "B2", value: jsonData["Inv date"] },
-        { cell: "A3", value: "Inv Reference" },
-        { cell: "B3", value: jsonData["Inv Reference"] },
-        { cell: "A4", value: "Cnee" },
+        { cell: "A2", value: "Invoicenumber" },
+        { cell: "B2", value: jsonData["Inv Reference"] },
+        { cell: "A3", value: "Invoicedate" },
+        { cell: "B3", value: jsonData["Inv date"] },
+        { cell: "A4", value: "Consignee" },
         { cell: "B4", value: jsonData.Cnee },
-        { cell: "A5", value: "VAT Cnee" },
+        { cell: "A5", value: "VAT Consignee" },
         { cell: "B5", value: jsonData["VAT Cnee"] },
-        { cell: "A6", value: "Reference1" },
+        { cell: "A6", value: "Reference 1" },
         { cell: "B6", value: jsonData.Reference1 },
-        { cell: "A7", value: "Reference2" },
+        { cell: "A7", value: "Reference 2" },
         { cell: "B7", value: jsonData.Reference2 },
-        { cell: "A8", value: "Customs authorisation" },
-        { cell: "B8", value: jsonData["Customs authorisation"] },
-        { cell: "A9", value: "Collis" },
-        { cell: "B9", value: jsonData.Collis },
-        { cell: "A10", value: "Weight" },
-        { cell: "B10", value: jsonData.Weight },
-        { cell: "A11", value: "INCO" },
-        { cell: "B11", value: jsonData.INCO },
-        { cell: "A12", value: "Invoiceamount" },
-        { cell: "B12", value: jsonData.Invoiceamount },
+        { cell: "A8", value: "Collis" },
+        { cell: "B8", value: jsonData.Collis },
+        { cell: "A9", value: "Weight" },
+        { cell: "B9", value: jsonData.Weight },
+        { cell: "A10", value: "INCO" },
+        { cell: "B10", value: jsonData.INCO },
+        { cell: "A11", value: "Invoiceamount" },
+        { cell: "B11", value: jsonData.Invoiceamount },
+        { cell: "A12", value: "Customs authorisation" },
+        { cell: "B12", value: jsonData["Customs authorisation"] },
       ];
 
       cellMapping.forEach((item) => {
@@ -161,7 +161,6 @@ function App() {
       );
 
       setJsonData(response.data);
-      console.log(jsonData);
     } catch (error) {
       console.log(error);
     }
